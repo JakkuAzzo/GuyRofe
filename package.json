@@ -1,0 +1,13 @@
+{
+  "name": "guyrofe-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static site utilities for image optimization",
+  "type": "module",
+  "scripts": {
+    "images:optimize": "node scripts/images/optimize.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.33.3"
+  }
+}

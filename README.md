@@ -1,6 +1,6 @@
 # Guy Rofe — Static Rebuild
 
-This repository contains a static rebuild of Guy Rofe's photography portfolio based on the Wix exports gathered in `/guy`. The new site is handcrafted for GitHub Pages, with local assets, modular CSS/JS, and accessible HTML.
+This repository contains a static rebuild of Guy Rofe's photography portfolio. The new site is handcrafted for GitHub Pages, with local assets, modular CSS/JS, and accessible HTML.
 
 ## Structure
 
@@ -9,14 +9,18 @@ This repository contains a static rebuild of Guy Rofe's photography portfolio ba
 ├── sports.html       # Sports archive grid
 ├── events.html       # Events & culture coverage
 ├── how-they-feel.html# Feature story prototype
+├── misc/
+│   ├── contact.html  # Contact form (FormSubmit)
+│   └── 121-collective-gallery.html  # 121 Collective gallery
 ├── scripts/
 │   ├── css/          # Base + page-level styles
-│   └── js/           # Site utilities and page scripts
+│   ├── js/           # Site utilities and page scripts
+│   └── images/       # Image optimization tools
 └── src/
-	├── home/        # Hero + editorial assets
-	├── sports/      # Sports gallery images
-	├── events/      # Event gallery images
-	└── stories/     # Long-form article assets
+    ├── home/        # Hero + editorial assets
+    ├── sports/      # Sports gallery images
+    ├── events/      # Event gallery images
+    └── stories/     # Long-form article assets
 ```
 
 ## Development
