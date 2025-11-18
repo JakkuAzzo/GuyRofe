@@ -1,0 +1,3 @@
+# Large cache artifacts from HTTrack should never be committed
+/guy/hts-cache/
+*.zip
