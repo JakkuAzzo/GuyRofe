@@ -1,3 +1,4 @@
-# Large cache artifacts from HTTrack should never be committed
-/guy/hts-cache/
+# Exclude zip archives and build artifacts
 *.zip
+node_modules/
+.DS_Store

@@ -183,11 +183,91 @@
         }
         
         footer {
-            background: #f5f5f5;
-            padding: 40px 20px;
+            background: #f8f8f8;
+            padding: 60px 20px 30px;
             margin-top: 100px;
-            text-align: center;
             color: #666;
+        }
+        
+        .footer-contact {
+            max-width: 720px;
+            margin: 0 auto 50px;
+        }
+        
+        .footer-contact h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            font-weight: 600;
+            color: #292929;
+        }
+        
+        .contact-form {
+            display: grid;
+            gap: 1.25rem;
+        }
+        
+        .form-row {
+            display: grid;
+            gap: 1.25rem;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .form-field label {
+            font-weight: 600;
+            font-size: 0.95em;
+            color: #292929;
+        }
+        
+        .form-field input[type="text"],
+        .form-field input[type="email"],
+        .form-field textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+        
+        .form-field input:focus,
+        .form-field textarea:focus {
+            outline: none;
+            border-color: #292929;
+        }
+        
+        .form-field textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+        
+        .contact-button {
+            justify-self: start;
+            background: #292929;
+            color: #fff;
+            padding: 0.9rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+        
+        .contact-button:hover {
+            background: #111;
+        }
+        
+        .footer-info {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid #ddd;
         }
         
         @media (max-width: 768px) {
@@ -253,9 +333,41 @@
         </div>
     </main>
     
-    <footer>
-        <p>&copy; 2025 Guy Rofe Photography. All rights reserved.</p>
-        <p><a href="contact.html" style="color: #666; text-decoration: none;">Get in Touch</a></p>
+    <footer id="contact">
+        <div class="footer-contact">
+          <h2>Get in Touch</h2>
+          <p style="margin-bottom: 2em; color: #666;">Ready to work together? Send a message and it will be delivered directly to <strong>guyrofe335@gmail.com</strong>.</p>
+          
+          <form action="https://formsubmit.co/GUYROFE335@GMAIL.COM" method="POST" class="contact-form">
+            <input type="hidden" name="_subject" value="New message from GuyRofe site - 121 Collective" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://jakkuazzo.github.io/GuyRofe/misc/121-collective-gallery.html?sent=1" />
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
+
+            <button type="submit" class="contact-button">Send Message</button>
+          </form>
+        </div>
+        
+        <div class="footer-info">
+            <p>&copy; 2025 Guy Rofe Photography. All rights reserved.</p>
+            <p><a href="mailto:guyrofe335@gmail.com" style="color: #666; text-decoration: none;">guyrofe335@gmail.com</a></p>
+        </div>
     </footer>
     
     <div class="lightbox" id="lightbox">
