@@ -358,11 +358,7 @@
   color: var(--color-accent);
 }
 
-.skills-columns ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+/* Skills columns ul already reset by base.css */
 
 .skills-columns li {
   color: var(--color-text);
@@ -380,8 +376,6 @@
 
 /* Extras section (exhibitions) */
 .extras ul {
-  list-style: none;
-  padding: 0;
   margin: 2rem 0 0;
   max-width: 800px;
 }
